@@ -11,15 +11,15 @@ const transport = nodemailer_1.default.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'fragosooliveira773@gmail.com',
-        pass: 'jcni tiex qwmj omxd',
+        user: 'lbayout1@gmail.com',
+        pass: 'agathamendes1@',
     },
 });
 class NodemailerMailAdapter {
     async sendMail({ subject, body }) {
         await transport.sendMail({
-            from: 'Equipe Feedget <fragosooliveira773@gmail.com>',
-            to: 'Gabriel Fragoso <gfragoso233@gmail.com>',
+            from: 'Equipe Feedget <lbayout1@gmail.com>',
+            to: 'Bay  <lbayout1@gmail.com>',
             subject,
             html: body,
         });
